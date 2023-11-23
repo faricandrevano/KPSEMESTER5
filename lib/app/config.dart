@@ -8,9 +8,9 @@ class AppConfig {
       'https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png';
 
   static const FlavorConfig<String> baseUrl = FlavorConfig<String>(
-    prod: 'https://shamo.donisaputra.com/api',
-    dev: 'https://shamo.donisaputra.com/api',
-    stag: 'https://shamo.donisaputra.com/api',
+    prod: 'http://192.168.137.1:80/api',
+    dev: 'http://192.168.137.1:80/api',
+    stag: 'http://192.168.137.1:80/api',
   );
   static const AppTheme defaultTheme = AppTheme.dark;
   static const bool autoStringifyEquatable = true;

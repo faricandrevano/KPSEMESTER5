@@ -10,28 +10,28 @@ class _GeneralSection extends StatelessWidget {
       children: [
         const SubTitleText('General'),
         Dimens.dp16.height,
-        _tile('Privacy & Policy', onTap: () {
-          Navigator.push(
-            context,
-            CupertinoPageRoute(
-              builder: (context) => WebViewPage(
-                appBar: AppBar(title: const Text('Privacy & Policy')),
-                url: 'https://shamo.donisaputra.com/privacy-policy',
-              ),
-            ),
-          );
-        }),
-        _tile('Term of Service', onTap: () {
-          Navigator.push(
-            context,
-            CupertinoPageRoute(
-              builder: (context) => WebViewPage(
-                appBar: AppBar(title: const Text('Term of Service')),
-                url: 'https://shamo.donisaputra.com/term',
-              ),
-            ),
-          );
-        }),
+        // _tile('Privacy & Policy', onTap: () {
+        //   Navigator.push(
+        //     context,
+        //     CupertinoPageRoute(
+        //       builder: (context) => WebViewPage(
+        //         appBar: AppBar(title: const Text('Privacy & Policy')),
+        //         url: 'https://shamo.donisaputra.com/privacy-policy',
+        //       ),
+        //     ),
+        //   );
+        // }),
+        // _tile('Term of Service', onTap: () {
+        //   Navigator.push(
+        //     context,
+        //     CupertinoPageRoute(
+        //       builder: (context) => WebViewPage(
+        //         appBar: AppBar(title: const Text('Term of Service')),
+        //         url: 'https://shamo.donisaputra.com/term',
+        //       ),
+        //     ),
+        //   );
+        // }),
         BlocBuilder<ThemeBloc, ThemeState>(
           builder: (context, theme) {
             return _tile('Change Theme', onTap: () {

@@ -16,17 +16,17 @@ class _AccountSection extends StatelessWidget {
         _tile('Your Orders', onTap: () {
           Navigator.pushNamed(context, TransactionPage.routeName);
         }),
-        _tile('Help', onTap: () {
-          Navigator.push(
-            context,
-            CupertinoPageRoute(
-              builder: (context) => WebViewPage(
-                appBar: AppBar(title: const Text('Help')),
-                url: 'https://shamo.donisaputra.com/help',
-              ),
-            ),
-          );
-        }),
+        // _tile('Help', onTap: () {
+        //   Navigator.push(
+        //     context,
+        //     CupertinoPageRoute(
+        //       builder: (context) => WebViewPage(
+        //         appBar: AppBar(title: const Text('Help')),
+        //         url: 'https://shamo.donisaputra.com/help',
+        //       ),
+        //     ),
+        //   );
+        // }),
       ],
     );
   }
